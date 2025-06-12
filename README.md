@@ -5,56 +5,56 @@ A comprehensive data analysis tool developed for Helwan students, built with Pyt
 
 ---
 
-helwan-insight4/
+helwan-insight/
 ├── src/
-│   ├── __init__.py              <-- (Empty file: Essential)
-│   ├── main.py                  <-- (Main application entry point)
-│
-│   ├── core/
-│   │   ├── __init__.py          <-- (Empty file: Essential)
-│   │   ├── data_handler.py      <-- (Handles data loading, saving, and basic manipulation)
-│   │   └── ...                  <-- (Other core functionalities)
-│
-│   ├── ui/
-│   │   ├── __init__.py          <-- (Empty file: Essential)
-│   │   ├── main_window.py       <-- (Defines the main application window and its layout)
-│   │
-│   │   ├── widgets/
-│   │   │   ├── __init__.py          <-- (Empty file: Essential)
-│   │   │   ├── data_viewer.py       <-- (Widget for displaying data tables)
-│   │   │   ├── data_preprocessing.py<-- (Widget for data cleaning/preparation)
-│   │   │   ├── eda_dashboard.py     <-- (Widget for exploratory data analysis dashboard and plots)
-│   │   │   └── ...                  <-- (Other UI components)
-│   │
-│   │   └── dialogs/
-│   │       ├── __init__.py          <-- (Empty file: Essential)
-│   │       ├── statistics_dialog.py <-- (Dialogs for specific user inputs/outputs)
-│   │       └── ...                  <-- (Other dialogs)
-│
-│   ├── utils/
-│   │   ├── __init__.py          <-- (Empty file: Essential)
-│   │   ├── i18n.py              <-- (Internationalization/translation setup logic)
-│   │   └── ...                  <-- (Utility functions)
-│
-│   ├── logo/
-│   │   ├── __init__.py          <-- (Empty file: Recommended)
-│   │   └── helwan-insight.png   <-- (Your application logo)
-│
-│   └── locale/
-│       ├── __init__.py          <-- (Empty file: Essential)
-│       ├── ar/                  <-- Arabic translations
+│   ├── __init__.py                ← (ملف فارغ ضروري)
+│   ├── main.py                    ← نقطة تشغيل التطبيق الرئيسية
+
+│   ├── core/                      ← وظائف منطقية أساسية
+│   │   ├── __init__.py
+│   │   ├── data_handler.py        ← تحميل البيانات، حفظها، والتعامل معها
+
+│   ├── ui/                        ← واجهة المستخدم
+│   │   ├── __init__.py
+│   │   ├── main_window.py         ← النافذة الرئيسية وتصميمها
+
+│   │   ├── widgets/               ← مكونات الواجهة
+│   │   │   ├── __init__.py
+│   │   │   ├── data_viewer.py         ← عرض الجداول
+│   │   │   ├── data_preprocessing.py  ← تنظيف وتحضير البيانات
+│   │   │   ├── eda_dashboard.py       ← لوحة تحليل البيانات الاستكشافية
+│   │   │   └── ...                    ← أدوات أخرى
+
+│   │   ├── dialogs/               ← النوافذ الحوارية
+│   │   │   ├── __init__.py
+│   │   │   ├── statistics_dialog.py  ← نافذة إدخال/عرض إحصائيات
+│   │   │   └── ...
+
+│   ├── utils/                     ← وظائف مساعدة
+│   │   ├── __init__.py
+│   │   ├── i18n.py                ← إعدادات الترجمة والتعريب
+│   │   └── ...
+
+│   ├── logo/                      ← شعار التطبيق
+│   │   ├── __init__.py (اختياري)
+│   │   └── helwan-insight.png
+
+│   └── locale/                    ← ملفات الترجمة
+│       ├── __init__.py
+│       ├── ar/
 │       │   └── LC_MESSAGES/
-│       │       ├── helwan_insight.po  <-- (Source translation file)
-│       │       └── helwan_insight.mo  <-- (Compiled translation file)
-│       ├── en/                  <-- English translations
+│       │       ├── helwan_insight.po  ← ملف الترجمة النصي
+│       │       └── helwan_insight.mo  ← ملف الترجمة المجمع
+│       ├── en/
 │       │   └── LC_MESSAGES/
 │       │       ├── helwan_insight.po
 │       │       └── helwan_insight.mo
-│       └── ...                  <-- (Other language folders)
-│
-├── helwan-insight.desktop       <-- (Desktop entry file for Linux desktop environments)
-├── PKGBUILD                     <-- (Arch Linux Package Build file for AUR/pacman)
-└── README.md                    <-- (This file!)
+│       └── ...
+
+├── helwan-insight.desktop        ← ملف تعريف التطبيق على بيئة سطح مكتب لينكس
+├── PKGBUILD                      ← ملف بناء الحزمة لـ Arch Linux (AUR)
+└── README.md                     ← هذا الملف
+
 
 
 ## Features
