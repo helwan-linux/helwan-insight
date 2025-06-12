@@ -1,88 +1,12 @@
-
 # Helwan Insight
 
 A comprehensive data analysis tool developed for Helwan students, built with Python and PyQt5. This application provides functionalities for data loading, preprocessing, exploratory data analysis (EDA), and data visualization.
 
 ---
 
-helwan-insight/
-├── src/
-│   ├── __init__.py                ← (ملف فارغ ضروري)
-│   ├── main.py                    ← نقطة تشغيل التطبيق الرئيسية
+## Project Structure
 
-│   ├── core/                      ← وظائف منطقية أساسية
-│   │   ├── __init__.py
-│   │   ├── data_handler.py        ← تحميل البيانات، حفظها، والتعامل معها
-
-│   ├── ui/                        ← واجهة المستخدم
-│   │   ├── __init__.py
-│   │   ├── main_window.py         ← النافذة الرئيسية وتصميمها
-
-│   │   ├── widgets/               ← مكونات الواجهة
-│   │   │   ├── __init__.py
-│   │   │   ├── data_viewer.py         ← عرض الجداول
-│   │   │   ├── data_preprocessing.py  ← تنظيف وتحضير البيانات
-│   │   │   ├── eda_dashboard.py       ← لوحة تحليل البيانات الاستكشافية
-│   │   │   └── ...                    ← أدوات أخرى
-
-│   │   ├── dialogs/               ← النوافذ الحوارية
-│   │   │   ├── __init__.py
-│   │   │   ├── statistics_dialog.py  ← نافذة إدخال/عرض إحصائيات
-│   │   │   └── ...
-
-│   ├── utils/                     ← وظائف مساعدة
-│   │   ├── __init__.py
-│   │   ├── i18n.py                ← إعدادات الترجمة والتعريب
-│   │   └── ...
-
-│   ├── logo/                      ← شعار التطبيق
-│   │   ├── __init__.py (اختياري)
-│   │   └── helwan-insight.png
-
-│   └── locale/                    ← ملفات الترجمة
-│       ├── __init__.py
-│       ├── ar/
-│       │   └── LC_MESSAGES/
-│       │       ├── helwan_insight.po  ← ملف الترجمة النصي
-│       │       └── helwan_insight.mo  ← ملف الترجمة المجمع
-│       ├── en/
-│       │   └── LC_MESSAGES/
-│       │       ├── helwan_insight.po
-│       │       └── helwan_insight.mo
-│       └── ...
-
-├── helwan-insight.desktop        ← ملف تعريف التطبيق على بيئة سطح مكتب لينكس
-├── PKGBUILD                      ← ملف بناء الحزمة لـ Arch Linux (AUR)
-└── README.md                     ← هذا الملف
-
-
-
-## Features
-
-* **Data Loading:** Load datasets from CSV and Excel files.
-* **Data Preprocessing:** Handle missing values, drop duplicates, change column types, rename columns.
-* **Exploratory Data Analysis (EDA):** Generate various statistical plots (histograms, scatter plots, box plots, pair plots, heatmaps) to understand data distributions and relationships.
-* **Data Visualization:** Interactive plotting capabilities.
-* **Multi-language Support:** Currently supports Arabic and English (expandable).
-
----
-
-## Requirements
-
-To run this application, you need Python 3.x and the following libraries:
-
-* **`PyQt5`**: For the graphical user interface.
-* **`pandas`**: For data manipulation and analysis.
-* **`numpy`**: For numerical operations, often a dependency of `pandas`.
-* **`matplotlib`**: For basic plotting and visualization.
-* **`seaborn`**: For enhanced statistical data visualization.
-
-You can install these libraries using pip:
-
-```bash
-pip install PyQt5 pandas numpy matplotlib seaborn
-```
-
+This is the organized folder structure of the `Helwan Insight` project. **Each folder marked with `__init__.py` must contain an empty file with that exact name.** This is crucial for Python to recognize them as packages.
 ---
 
 ## How to Run the Application (Development)
