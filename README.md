@@ -5,64 +5,57 @@ A comprehensive data analysis tool developed for Helwan students, built with Pyt
 
 ---
 
-## Project Structure
-
-This is the organized folder structure of the `Helwan Insight` project. **Each folder marked with `__init__.py` must contain an empty file with that exact name.** This is crucial for Python to recognize them as packages.
-
 helwan-insight4/
 ├── src/
-│   ├── init.py           <-- (Empty file: Essential)
-│   ├── main.py               <-- (Main application entry point)
-│   │
-│   ├── core/
-│   │   ├── init.py       <-- (Empty file: Essential)
-│   │   ├── data_handler.py   <-- (Handles data loading, saving, and basic manipulation)
-│   │   └── ... (other core functionalities)
-│   │
-│   ├── ui/
-│   │   ├── init.py       <-- (Empty file: Essential)
-│   │   ├── main_window.py    <-- (Defines the main application window and its layout)
-│   │   ├── widgets/
-│   │   │   ├── init.py   <-- (Empty file: Essential)
-│   │   │   ├── data_viewer.py        <-- (Widget for displaying data tables)
-│   │   │   ├── data_preprocessing.py <-- (Widget for data cleaning/preparation)
-│   │   │   ├── eda_dashboard.py      <-- (Widget for exploratory data analysis dashboard and plots)
-│   │   │   └── ... (other UI components)
-│   │   │
-│   │   └── dialogs/
-│   │       ├── init.py   <-- (Empty file: Essential)
-│   │       ├── statistics_dialog.py  <-- (Dialogs for specific user inputs/outputs)
-│   │       └── ... (other dialogs)
-│   │
-│   ├── utils/
-│   │   ├── init.py       <-- (Empty file: Essential)
-│   │   ├── i18n.py           <-- (Internationalization/translation setup logic)
-│   │   └── ... (utility functions)
-│   │
-│   ├── logo/                 <-- (Contains application icon/logo)
-│   │   ├── init.py       <-- (Empty file: Recommended)
-│   │   └── helwan-insight.png <-- (Your application logo)
-│   │
-│   └── locale/               <-- (Contains translation files)
-│       ├── init.py       <-- (Empty file: Essential)
-│       ├── ar/               <-- Arabic translations
-│       │   ├── LC_MESSAGES/
-│       │   │   └── helwan_insight.mo  <-- (Compiled translation file)
-│       │   │   └── helwan_insight.po  <-- (Source translation file)
-│       │   └── ...
-│       │
-│       ├── en/               <-- English translations (if separate files exist)
-│       │   ├── LC_MESSAGES/
-│       │   │   └── helwan_insight.mo
-│       │   │   └── helwan_insight.po
-│       │   └── ...
-│       └── ... (other language folders)
+│   ├── __init__.py              <-- (Empty file: Essential)
+│   ├── main.py                  <-- (Main application entry point)
 │
-├── helwan-insight.desktop  <-- (Desktop entry file for Linux desktop environments)
-├── PKGBUILD                <-- (Arch Linux Package Build file for AUR/pacman)
-└── README.md               <-- (This file!)
+│   ├── core/
+│   │   ├── __init__.py          <-- (Empty file: Essential)
+│   │   ├── data_handler.py      <-- (Handles data loading, saving, and basic manipulation)
+│   │   └── ...                  <-- (Other core functionalities)
+│
+│   ├── ui/
+│   │   ├── __init__.py          <-- (Empty file: Essential)
+│   │   ├── main_window.py       <-- (Defines the main application window and its layout)
+│   │
+│   │   ├── widgets/
+│   │   │   ├── __init__.py          <-- (Empty file: Essential)
+│   │   │   ├── data_viewer.py       <-- (Widget for displaying data tables)
+│   │   │   ├── data_preprocessing.py<-- (Widget for data cleaning/preparation)
+│   │   │   ├── eda_dashboard.py     <-- (Widget for exploratory data analysis dashboard and plots)
+│   │   │   └── ...                  <-- (Other UI components)
+│   │
+│   │   └── dialogs/
+│   │       ├── __init__.py          <-- (Empty file: Essential)
+│   │       ├── statistics_dialog.py <-- (Dialogs for specific user inputs/outputs)
+│   │       └── ...                  <-- (Other dialogs)
+│
+│   ├── utils/
+│   │   ├── __init__.py          <-- (Empty file: Essential)
+│   │   ├── i18n.py              <-- (Internationalization/translation setup logic)
+│   │   └── ...                  <-- (Utility functions)
+│
+│   ├── logo/
+│   │   ├── __init__.py          <-- (Empty file: Recommended)
+│   │   └── helwan-insight.png   <-- (Your application logo)
+│
+│   └── locale/
+│       ├── __init__.py          <-- (Empty file: Essential)
+│       ├── ar/                  <-- Arabic translations
+│       │   └── LC_MESSAGES/
+│       │       ├── helwan_insight.po  <-- (Source translation file)
+│       │       └── helwan_insight.mo  <-- (Compiled translation file)
+│       ├── en/                  <-- English translations
+│       │   └── LC_MESSAGES/
+│       │       ├── helwan_insight.po
+│       │       └── helwan_insight.mo
+│       └── ...                  <-- (Other language folders)
+│
+├── helwan-insight.desktop       <-- (Desktop entry file for Linux desktop environments)
+├── PKGBUILD                     <-- (Arch Linux Package Build file for AUR/pacman)
+└── README.md                    <-- (This file!)
 
----
 
 ## Features
 
