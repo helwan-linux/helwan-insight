@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: helwan-insight\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-12 08:29+0000\n"
+"PO-Revision-Date: 2025-06-12 08:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: English <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+"Language: en\n"
+
+msgid "Helwan-Insight - Data Analysis Tool"
+msgstr "Helwan-Insight - Data Analysis Tool"
+
+msgid "&File"
+msgstr "&File"
+
+msgid "&Load Data"
+msgstr "&Load Data"
+
+msgid "Load data from a file"
+msgstr "Load data from a file"
+
+msgid "E&xit"
+msgstr "E&xit"
+
+msgid "Exit the application"
+msgstr "Exit the application"
+
+msgid "&Help"
+msgstr "&Help"
+
+msgid "&About"
+msgstr "&About"
+
+msgid "Show information about Helwan-Insight"
+msgstr "Show information about Helwan-Insight"
+
+msgid "Welcome to Helwan-Insight! Load your data to get started."
+msgstr "Welcome to Helwan-Insight! Load your data to get started."
+
+msgid "Ready"
+msgstr "Ready"
+
+msgid "Language Change"
+msgstr "Language Change"
+
+msgid "The language will be applied. Some elements might require a restart to fully update."
+msgstr "The language will be applied. Some elements might require a restart to fully update."
+
+msgid "Load Data File"
+msgstr "Load Data File"
+
+msgid "Data Files (*.csv *.xlsx *.xls);;All Files (*)"
+msgstr "Data Files (*.csv *.xlsx *.xls);;All Files (*)"
+
+msgid "Loading data... Please wait."
+msgstr "Loading data... Please wait."
+
+msgid "Unsupported File Type"
+msgstr "Unsupported File Type"
+
+msgid "Please select a CSV or Excel file."
+msgstr "Please select a CSV or Excel file."
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Data loaded successfully from {file_path}.\nRows: {rows}, Columns: {cols}"
+msgstr "Data loaded successfully from {file_path}.\nRows: {rows}, Columns: {cols}"
+
+msgid "Data loaded successfully! Rows: {rows}, Columns: {cols}"
+msgstr "Data loaded successfully! Rows: {rows}, Columns: {cols}"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Failed to load data: {e}"
+msgstr "Failed to load data: {e}"
+
+msgid "Error loading data."
+msgstr "Error loading data."
+
+msgid "Plot Info"
+msgstr "Plot Info"
+
+msgid "Plotting for Text columns will be implemented soon!"
+msgstr "Plotting for Text columns will be implemented soon!"
+
+msgid "Time Series plotting will be implemented soon!"
+msgstr "Time Series plotting will be implemented soon!"
+
+msgid "Plot Error"
+msgstr "Plot Error"
+
+msgid "Unsupported plot type requested."
+msgstr "Unsupported plot type requested."
+
+msgid "Plotting area not available."
+msgstr "Plotting area not available."
+
+msgid "Histogram of "
+msgstr "Histogram of "
+
+msgid "Bar Chart of "
+msgstr "Bar Chart of "
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Data Summary"
+msgstr "Data Summary"
+
+msgid "Visualizations"
+msgstr "Visualizations"
+
+msgid "Column:"
+msgstr "Column:"
+
+msgid "Select Column"
+msgstr "Select Column"
+
+msgid "Data Type:"
+msgstr "Data Type:"
+
+msgid "Unique Values:"
+msgstr "Unique Values:"
+
+msgid "Missing Values:"
+msgstr "Missing Values:"
+
+msgid "Mean:"
+msgstr "Mean:"
+
+msgid "Median:"
+msgstr "Median:"
+
+msgid "Mode:"
+msgstr "Mode:"
+
+msgid "Std Dev:"
+msgstr "Std Dev:"
+
+msgid "Min:"
+msgstr "Min:"
+
+msgid "Max:"
+msgstr "Max:"
+
+msgid "Count:"
+msgstr "Count:"
+
+msgid "Top 5 values:"
+msgstr "Top 5 values:"
+
+msgid "Value"
+msgstr "Value"
+
+msgid "Frequency"
+msgstr "Frequency"
+
+msgid "Summary Statistics for"
+msgstr "Summary Statistics for"

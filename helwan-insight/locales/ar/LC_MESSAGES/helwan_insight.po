@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: helwan-insight\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-12 08:29+0000\n"
+"PO-Revision-Date: 2025-06-12 08:30+0000\n"
+"Last-Translator: Your Name <your.email@example.com>\n"
+"Language-Team: Arabic <ar@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+"Language: ar\n"
+
+msgid "Helwan-Insight - Data Analysis Tool"
+msgstr "حلوان-إنسايت - أداة تحليل البيانات"
+
+msgid "&File"
+msgstr "ملف"
+
+msgid "&Load Data"
+msgstr "تحميل البيانات"
+
+msgid "Load data from a file"
+msgstr "تحميل البيانات من ملف"
+
+msgid "E&xit"
+msgstr "خروج"
+
+msgid "Exit the application"
+msgstr "الخروج من التطبيق"
+
+msgid "&Help"
+msgstr "مساعدة"
+
+msgid "&About"
+msgstr "عن البرنامج"
+
+msgid "Show information about Helwan-Insight"
+msgstr "عرض معلومات عن Helwan-Insight"
+
+msgid "Welcome to Helwan-Insight! Load your data to get started."
+msgstr "مرحباً بك في حلوان-إنسايت! قم بتحميل بياناتك للبدء."
+
+msgid "Ready"
+msgstr "جاهز"
+
+msgid "Language Change"
+msgstr "تغيير اللغة"
+
+msgid "The language will be applied. Some elements might require a restart to fully update."
+msgstr "سيتم تطبيق اللغة. قد تتطلب بعض العناصر إعادة تشغيل للتحديث الكامل."
+
+msgid "Load Data File"
+msgstr "تحميل ملف البيانات"
+
+msgid "Data Files (*.csv *.xlsx *.xls);;All Files (*)"
+msgstr "ملفات البيانات (*.csv *.xlsx *.xls);;جميع الملفات (*)"
+
+msgid "Loading data... Please wait."
+msgstr "جارٍ تحميل البيانات... يرجى الانتظار."
+
+msgid "Unsupported File Type"
+msgstr "نوع ملف غير مدعوم"
+
+msgid "Please select a CSV or Excel file."
+msgstr "الرجاء تحديد ملف CSV أو Excel."
+
+msgid "Success"
+msgstr "نجاح"
+
+msgid "Data loaded successfully from {file_path}.\nRows: {rows}, Columns: {cols}"
+msgstr "تم تحميل البيانات بنجاح من {file_path}.\nالصفوف: {rows}، الأعمدة: {cols}"
+
+msgid "Data loaded successfully! Rows: {rows}, Columns: {cols}"
+msgstr "تم تحميل البيانات بنجاح! الصفوف: {rows}، الأعمدة: {cols}"
+
+msgid "Error"
+msgstr "خطأ"
+
+msgid "Failed to load data: {e}"
+msgstr "فشل تحميل البيانات: {e}"
+
+msgid "Error loading data."
+msgstr "خطأ في تحميل البيانات."
+
+msgid "Plot Info"
+msgstr "معلومات الرسم البياني"
+
+msgid "Plotting for Text columns will be implemented soon!"
+msgstr "سيتم تنفيذ الرسم البياني للأعمدة النصية قريباً!"
+
+msgid "Time Series plotting will be implemented soon!"
+msgstr "سيتم تنفيذ الرسم البياني للسلاسل الزمنية قريباً!"
+
+msgid "Plot Error"
+msgstr "خطأ في الرسم البياني"
+
+msgid "Unsupported plot type requested."
+msgstr "نوع الرسم البياني المطلوب غير مدعوم."
+
+msgid "Plotting area not available."
+msgstr "منطقة الرسم البياني غير متاحة."
+
+msgid "Histogram of "
+msgstr "مخطط التوزيع التكراري لـ "
+
+msgid "Bar Chart of "
+msgstr "مخطط الأعمدة لـ "
+
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+msgid "Data Summary"
+msgstr "ملخص البيانات"
+
+msgid "Visualizations"
+msgstr "الرسوم البيانية"
+
+msgid "Column:"
+msgstr "العمود:"
+
+msgid "Select Column"
+msgstr "اختر عمود"
+
+msgid "Data Type:"
+msgstr "نوع البيانات:"
+
+msgid "Unique Values:"
+msgstr "القيم الفريدة:"
+
+msgid "Missing Values:"
+msgstr "القيم المفقودة:"
+
+msgid "Mean:"
+msgstr "المتوسط:"
+
+msgid "Median:"
+msgstr "الوسيط:"
+
+msgid "Mode:"
+msgstr "المنوال:"
+
+msgid "Std Dev:"
+msgstr "الانحراف المعياري:"
+
+msgid "Min:"
+msgstr "الحد الأدنى:"
+
+msgid "Max:"
+msgstr "الحد الأقصى:"
+
+msgid "Count:"
+msgstr "العدد:"
+
+msgid "Top 5 values:"
+msgstr "أعلى 5 قيم:"
+
+msgid "Value"
+msgstr "القيمة"
+
+msgid "Frequency"
+msgstr "التكرار"
+
+msgid "Summary Statistics for"
+msgstr "إحصائيات ملخصة لـ"
