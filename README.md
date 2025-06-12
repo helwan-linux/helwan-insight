@@ -7,7 +7,57 @@ A comprehensive data analysis tool developed for Helwan students, built with Pyt
 ## Project Structure
 
 This is the organized folder structure of the `Helwan Insight` project. **Each folder marked with `__init__.py` must contain an empty file with that exact name.** This is crucial for Python to recognize them as packages.
----
+
+helwan-insight4/
+├── src/
+│   ├── __init__.py                ← (ملف فارغ ضروري)
+│   ├── main.py                    ← نقطة تشغيل التطبيق الرئيسية
+
+│   ├── core/                      ← وظائف منطقية أساسية
+│   │   ├── __init__.py
+│   │   ├── data_handler.py        ← تحميل البيانات، حفظها، والتعامل معها
+
+│   ├── ui/                        ← واجهة المستخدم
+│   │   ├── __init__.py
+│   │   ├── main_window.py         ← النافذة الرئيسية وتصميمها
+
+│   │   ├── widgets/               ← مكونات الواجهة
+│   │   │   ├── __init__.py
+│   │   │   ├── data_viewer.py         ← عرض الجداول
+│   │   │   ├── data_preprocessing.py  ← تنظيف وتحضير البيانات
+│   │   │   ├── eda_dashboard.py       ← لوحة تحليل البيانات الاستكشافية
+│   │   │   └── ...                    ← أدوات أخرى
+
+│   │   ├── dialogs/               ← النوافذ الحوارية
+│   │   │   ├── __init__.py
+│   │   │   ├── statistics_dialog.py  ← نافذة إدخال/عرض إحصائيات
+│   │   │   └── ...
+
+│   ├── utils/                     ← وظائف مساعدة
+│   │   ├── __init__.py
+│   │   ├── i18n.py                ← إعدادات الترجمة والتعريب
+│   │   └── ...
+
+│   ├── logo/                      ← شعار التطبيق
+│   │   ├── __init__.py (اختياري)
+│   │   └── helwan-insight.png
+
+│   └── locale/                    ← ملفات الترجمة
+│       ├── __init__.py
+│       ├── ar/
+│       │   └── LC_MESSAGES/
+│       │       ├── helwan_insight.po  ← ملف الترجمة النصي
+│       │       └── helwan_insight.mo  ← ملف الترجمة المجمع
+│       ├── en/
+│       │   └── LC_MESSAGES/
+│       │       ├── helwan_insight.po
+│       │       └── helwan_insight.mo
+│       └── ...
+
+├── helwan-insight.desktop        ← ملف تعريف التطبيق على بيئة سطح مكتب لينكس
+├── PKGBUILD                      ← ملف بناء الحزمة لـ Arch Linux (AUR)
+└── README.md                     ← هذا الملف
+
 
 ## How to Run the Application (Development)
 
