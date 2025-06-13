@@ -7,7 +7,13 @@ import os
 from ui.main_window import MainWindow # <--- هذا هو سطر الاستدعاء المهم
 from utils.i18n import setup_translation
 
+
 def main():
+    # ✅ نضيف السطرين دول هنا
+    from PyQt5.QtCore import Qt, QCoreApplication
+    QCoreApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    QCoreApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
+
     app = QApplication(sys.argv)
 
     initial_locale = QLocale.system().name()
@@ -22,8 +28,9 @@ def main():
         app.installTranslator(qt_translator)
 
     main_win = MainWindow(_translator_func=translator_func)
-    main_win.show()
+    main_win.showMaximized()
     sys.exit(app.exec_())
+
 
 if __name__ == '__main__':
     main()
