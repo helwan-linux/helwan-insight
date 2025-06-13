@@ -2,7 +2,7 @@
 Name=Helwan Insight
 Comment=A comprehensive data analysis tool for students.
 Exec=hel-insight
-Icon=/usr/share/helwan-insight/logo/helwan-insight.png
+Icon=helwan-insight
 Terminal=false
 Type=Application
 Categories=Science;Education;Utility;
