@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Helwan Insight
 Comment=A comprehensive data analysis tool for students.
-Exec=hel-insight
+Exec=python3 /usr/share/hel-insight/src/main.py
 Icon=helwan-insight
 Terminal=false
 Type=Application
