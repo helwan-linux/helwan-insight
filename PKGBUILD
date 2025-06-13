@@ -3,48 +3,37 @@
 pkgname=hel-insight
 pkgver=1.0.0
 pkgrel=1
-pkgdesc="A comprehensive data analysis tool for Helwan students built with PyQt5 and Pandas."
+pkgdesc="A comprehensive data analysis tool for students."
 arch=('any')
 url="https://github.com/helwan-linux/helwan-insight"
 license=('MIT')
-
-depends=(
-  'python'
-  'python-pyqt5'
-  'python-pandas'
-  'python-numpy'
-  'python-matplotlib'
-  'python-seaborn'
-)
-
-# بنختار تحميل نسخة مضغوطة من الريبو
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/helwan-linux/helwan-insight/archive/refs/tags/v${pkgver}.tar.gz")
+depends=('python' 'python-pyqt5' 'python-pandas' 'python-numpy' 'python-matplotlib' 'python-seaborn')
+source=("hel-insight.tar.gz::https://github.com/helwan-linux/helwan-insight/archive/refs/heads/main.tar.gz")
 sha256sums=('SKIP')
 
-# اسم مجلد الريبو بعد الفك
-_appsrcdir="helwan-linux-helwan-insight-${pkgver}"
-
 build() {
-  cd "${srcdir}/${_appsrcdir}"
-  # لا أجزاء بناء لأن بايثون فقط
+  cd "$srcdir/helwan-insight-main"
 }
 
 package() {
-  cd "${srcdir}/${_appsrcdir}"
+  cd "$srcdir/helwan-insight-main/helwan-insight"
 
-  install -d "${pkgdir}/usr/share/${pkgname}"
-  cp -r src/* "${pkgdir}/usr/share/${pkgname}/"
+  # نسخ الملفات إلى /usr/share
+  install -d "$pkgdir/usr/share/hel-insight"
+  cp -r src locales "$pkgdir/usr/share/hel-insight/"
 
-  install -d "${pkgdir}/usr/share/applications"
-  install -m644 helwan-insight.desktop "${pkgdir}/usr/share/applications/helwan-insight.desktop"
+  # تثبيت أيقونة
+  install -Dm644 src/logo/helwan-insight.png "$pkgdir/usr/share/pixmaps/helwan-insight.png"
 
-  install -d "${pkgdir}/usr/share/pixmaps"
-  install -m644 src/logo/helwan-insight.png "${pkgdir}/usr/share/pixmaps/helwan-insight.png"
+  # ملف سطح المكتب
+  install -Dm644 helwan-insight.desktop "$pkgdir/usr/share/applications/hel-insight.desktop"
 
-  install -d "${pkgdir}/usr/bin"
-  cat <<EOF > "${pkgdir}/usr/bin/${pkgname}"
+  # سكريبت التشغيل
+  install -d "$pkgdir/usr/bin"
+  cat <<EOF > "$pkgdir/usr/bin/hel-insight"
 #!/bin/bash
-exec python /usr/share/${pkgname}/main.py "\$@"
+# هذا السطر تم تعديله لتشغيل main.py مباشرة مع PYTHONPATH الصحيح
+PYTHONPATH="/usr/share/hel-insight/src" python3 /usr/share/hel-insight/src/main.py "\$@"
 EOF
-  chmod +x "${pkgdir}/usr/bin/${pkgname}"
+  chmod +x "$pkgdir/usr/bin/hel-insight"
 }
