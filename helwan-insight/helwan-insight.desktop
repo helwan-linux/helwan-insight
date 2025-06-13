@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Helwan Insight
 Comment=A comprehensive data analysis tool for students.
-Exec=helwan-insight
+Exec=hel-insight
 Icon=/usr/share/helwan-insight/logo/helwan-insight.png
 Terminal=false
 Type=Application
