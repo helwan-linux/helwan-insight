@@ -7,7 +7,7 @@ pkgdesc="A comprehensive data analysis tool for students."
 arch=('any')
 url="https://github.com/helwan-linux/helwan-insight"
 license=('MIT')
-depends=('python' 'python-pyqt5' 'python-pandas' 'python-numpy' 'python-matplotlib' 'python-seaborn')
+depends=('python' 'python-pyqt5' 'python-pandas' 'python-numpy' 'python-matplotlib' 'python-seaborn' 'python-scipy')
 source=("hel-insight.tar.gz::https://github.com/helwan-linux/helwan-insight/archive/refs/heads/main.tar.gz")
 sha256sums=('SKIP')
 
